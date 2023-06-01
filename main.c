@@ -50,6 +50,8 @@ int main(int argc, char *argv[]) {
     }
 
     printf("-----BEGIN ENCRYPTED VALUE-----\n%s\n-----END ENCRYPTED VALUE-----\n", encrypted_msg);
+
+    free(encrypted_msg);
   } else {
     printUsage();
   }
